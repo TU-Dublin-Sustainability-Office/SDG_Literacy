@@ -2,15 +2,20 @@
 <html>
 <head>
     <style>
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
     .sdg-container {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
+      gap: 5px; /* less gap for closer icons */
     }
 
     .sdg img {
-      width: 100px;
-      height: 100px;
+      width: 150px; /* larger icons */
+      height: 150px; /* larger icons */
       transition: transform 0.3s ease;
     }
 
@@ -55,6 +60,7 @@
 </head>
 <body>
 
+<div class="container">   
 <div class="sdg-container">
   <div class="sdg" onclick="showInfo(1)"><img src="sdg1.png"></div>
   <div class="sdg" onclick="showInfo(2)"><img src="sdg2.png"></div>
@@ -86,6 +92,7 @@
     <span class="close">&times;</span>
     <p id="sdgInfo">Some SDG info here</p>
   </div>
+</div>
 </div>
 
 <script>
