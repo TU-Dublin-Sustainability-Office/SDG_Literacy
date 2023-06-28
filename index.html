@@ -2,10 +2,15 @@
 <html>
 <head>
     <style>
+    .logo {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
     .sdg-container {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      gap: 5px; /* less gap for closer icons */
+      gap: 2px; /* less gap for closer icons */
     }
 
     .sdg img {
@@ -55,7 +60,7 @@
 </head>
 <body>
 
-<img src="SDG_logo.png" alt="SDG Logo">
+<img class="logo" src="SDG_logo.png" alt="SDG Logo">
 <div class="sdg-container">
   <div class="sdg" onclick="showInfo(1)"><img src="sdg1.png"></div>
   <div class="sdg" onclick="showInfo(2)"><img src="sdg2.png"></div>
