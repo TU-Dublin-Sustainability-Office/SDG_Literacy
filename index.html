@@ -55,7 +55,7 @@
 </head>
 <body>
 
- 
+<img src="SDG_logo.png" alt="SDG Logo">
 <div class="sdg-container">
   <div class="sdg" onclick="showInfo(1)"><img src="sdg1.png"></div>
   <div class="sdg" onclick="showInfo(2)"><img src="sdg2.png"></div>
@@ -106,8 +106,10 @@ window.onclick = function(event) {
 }
 
 function showInfo(sdgNumber) {
+  if(sdgNumber !== 18) {  
   document.getElementById('sdgInfo').innerText = `Information about SDG ${sdgNumber}`;
   modal.style.display = "block";
+  }
 }
 </script>
 
