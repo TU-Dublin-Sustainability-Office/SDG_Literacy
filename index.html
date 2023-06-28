@@ -4,7 +4,7 @@
     <style>
     .sdg-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-template-columns: repeat(6, 1fr);
       gap: 10px;
     }
 
@@ -51,10 +51,29 @@
 <body>
 
 <div class="sdg-container">
-  <div class="sdg" id="sdg1" onclick="showInfo(1)">
-    <img src="sdg1.png">
-  </div>
-  <!-- add more sdg divs for each goal -->
+  <div class="sdg" onclick="showInfo(1)"><img src="sdg1.png"></div>
+  <div class="sdg" onclick="showInfo(2)"><img src="sdg2.png"></div>
+  <div class="sdg" onclick="showInfo(2)"><img src="sdg3.png"></div>
+  <div class="sdg" onclick="showInfo(2)"><img src="sdg4.png"></div>
+    <div class="sdg" onclick="showInfo(2)"><img src="sdg5.png"></div>
+    <div class="sdg" onclick="showInfo(2)"><img src="sdg6.png"></div>
+</div>
+
+<div class="sdg-container">
+  <div class="sdg" onclick="showInfo(7)"><img src="sdg7.png"></div>
+  <div class="sdg" onclick="showInfo(7)"><img src="sdg8.png"></div>
+    <div class="sdg" onclick="showInfo(7)"><img src="sdg9.png"></div>
+    <div class="sdg" onclick="showInfo(7)"><img src="sdg10.png"></div>
+    <div class="sdg" onclick="showInfo(7)"><img src="sdg11.png"></div>
+    <div class="sdg" onclick="showInfo(7)"><img src="sdg12.png"></div>
+</div>
+
+<div class="sdg-container">
+  <div class="sdg" onclick="showInfo(13)"><img src="sdg13.png"></div>
+  <div class="sdg" onclick="showInfo(13)"><img src="sdg14.png"></div>
+    <div class="sdg" onclick="showInfo(13)"><img src="sdg15.png"></div>
+    <div class="sdg" onclick="showInfo(13)"><img src="sdg16.png"></div>
+    <div class="sdg" onclick="showInfo(13)"><img src="sdg17.png"></div>
 </div>
 
 <div id="sdgModal" class="modal">
