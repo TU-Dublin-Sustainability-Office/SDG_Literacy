@@ -2,11 +2,6 @@
 <html>
 <head>
     <style>
-    .container {
-      display: flex;
-      justify-content: center;
-    }
-
     .sdg-container {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -60,7 +55,7 @@
 </head>
 <body>
 
-<div class="container">   
+ 
 <div class="sdg-container">
   <div class="sdg" onclick="showInfo(1)"><img src="sdg1.png"></div>
   <div class="sdg" onclick="showInfo(2)"><img src="sdg2.png"></div>
@@ -85,6 +80,7 @@
     <div class="sdg" onclick="showInfo(13)"><img src="sdg15.png"></div>
     <div class="sdg" onclick="showInfo(13)"><img src="sdg16.png"></div>
     <div class="sdg" onclick="showInfo(13)"><img src="sdg17.png"></div>
+    <div class="sdg" onclick="showInfo(13)"><img src="SDGWheel.png"></div>
 </div>
 
 <div id="sdgModal" class="modal">
@@ -93,7 +89,7 @@
     <p id="sdgInfo">Some SDG info here</p>
   </div>
 </div>
-</div>
+
 
 <script>
 var modal = document.getElementById("sdgModal");
